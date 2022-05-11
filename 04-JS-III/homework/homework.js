@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+    return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+    return array[array.length - 1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+    return array.length;
 }
 
 
@@ -23,6 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  for(let i = 0; i < array.length; i++){
+    
+  }
 }
 
 
@@ -30,6 +36,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+    let arr = array.push("elemento");
+    return array;
 }
 
 
@@ -47,6 +55,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+    let arr = ["Hello", "world!"];
+    return arr[0] + " " + arr[1];
+    
 }
 
 
@@ -129,6 +140,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+    let contenedor = [];
+    for(let i = 0; i < array.length; i++){
+      if(array.length > 100){
+        contenedor.push(i);
+      }
+    }
+    return contenedor;
 }
 
 
